@@ -1,4 +1,4 @@
-/* Dump file - ich 106 - Data Manipulation Language */
+/* Dump file - CIE 106 - Data Manipulation Language */
 
 CREATE TABLE  tblClasses (
 	 Classe   INT  NOT NULL,

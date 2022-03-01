@@ -5,6 +5,8 @@ FROM
     tblEmployes E
         INNER JOIN
     tblDepartements D ON D.DNo = E.DNo
+WHERE 
+D.DNom = 'Vente'
 ORDER BY ENom;
 
 -- B --
@@ -19,7 +21,7 @@ WHERE
     
 -- C --
 SELECT 
-    *, DNom
+    E.*, DNom
 FROM
     tblEmployes E
         INNER JOIN

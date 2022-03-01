@@ -51,15 +51,16 @@ WHERE
     
 -- F --
 SELECT 
-    EJob, DNom
+    DISTINCT EJob, DNom
 FROM
     tblEmployes E
         INNER JOIN
-    tblDepartements D ON D.DNo = E.DNo;
+    tblDepartements D ON D.DNo = E.DNo
+ORDER BY EJob, DNom;
     
 -- G --
 SELECT 
-    D.DNom
+    DISTINCT D.DNom
 FROM
     tblDepartements D
         INNER JOIN
